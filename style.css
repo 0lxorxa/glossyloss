@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white
+}
+
+.upperbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 8px 55px;
+    opacity: 0.9;
+    position: sticky;
+}
+
+
+
+.upperbar__LOGO{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: pink;
+}
+
+.upperbar__LOGO i{
+    color: #d49466;
+}
+
+.upperbar__MENU{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.upperbar__MENU li{
+    padding: 8px 15px; 
+}
+
+.upperbar__MENU li:hover{
+    background-color: #d49466;
+    border-radius: 4px;
+}
+
+.upperbar__ALPHALINK{
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0; 
+}
+
+.upperbar__ALPHALINK li{
+    padding: 8px 12px;
+}
+
+.upperbar__togglebtn{
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .upperbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .upperbar__MENU{
+        display: none;
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+    }
+
+    .upperbar__MENU li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .upperbar__ALPHALINK {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .upperbar__togglebtn{
+        display: block;
+    }
+
+    .upperbar__MENU.active,
+    .upperbar__ALPHALINK.active{
+        display: flex;
+    }
+}
