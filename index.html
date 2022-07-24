@@ -19,6 +19,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Rubik:wght@300&display=swap" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+
     <script src = "script.js" defer></script>
 </head>
 
@@ -45,8 +49,8 @@
 
 
     <ul class = "upperbar__ALPHALINK"> 
-        <li><i class="fa-brands fa-instagram"></i></li>
-        <li><i class="fa-solid fa-building-columns"></i></li>
+        <li><a href="https://www.instagram.com/khu_gloss"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="http://deptofenglish.khu.ac.kr/contents/bbs/bbs_list.html?bbs_cls_cd=001003002"><i class="fa-solid fa-building-columns"></i></a></li>
     </ul>
 
     <a href="#" class="upperbar__togglebtn">
@@ -55,6 +59,11 @@
     <script src="script.js"></script>
 
     </nav>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <div class = "content1">
     <video autoplay width=100% max-width=100px height=auto>
@@ -65,15 +74,27 @@
 
     <div class = "content2" style = "text-align:center;">
         <a href="" class="magazine_3">
-            <img src = "images/thirdreport.png" alt="X" width=200px vspace = 30 hspace=30/>
+            <img src = "images/thirdreport.png"
+            data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            data-aos-anchor-placement="bottom-bottom"
+            alt="X" width=200px vspace = 30 hspace=30/>
         </a>
 
         <a href="#" class="magazine_2">
-        <img src = "images/secondreport.png" alt="X" width=200px vspace = 30 hspace=30/>
+            <img src = "images/secondreport.png" 
+            data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            data-aos-anchor-placement="bottom-bottom"
+            alt="X" width=200px vspace = 30 hspace=30/>
         </a>
 
         <a href="#" class="magazine_1">        
-        <img src = "images/firstreport.jpg" alt="X" width=200px vspace = 30 hspace=30/>
+            <img src = "images/firstreport.jpg" 
+            data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            data-aos-anchor-placement="bottom-bottom"
+            alt="X" width=200px vspace = 30 hspace=30/>
         </a>
     </div>
 </body>
