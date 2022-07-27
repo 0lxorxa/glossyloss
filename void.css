@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white
+}
+
+.upperbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 1px 55px;
+    opacity: 0.85;
+    position: fixed;
+    width: 96%; 
+    min-height: 40px;
+    padding-bottom: 0px;
+    z-index: 10; 
+}
+
+.upperbar__LOGO{
+    font-size: 22px;
+    color: pink;
+}
+
+.upperbar__LOGO i{
+    color: #d49466;
+}
+
+.upperbar__MENU{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+    padding-top: 0px;
+}
+
+.upperbar__MENU li{
+    padding: 8px 15px; 
+}
+
+.upperbar__MENU li:hover{
+    background-color: #d49466;
+    border-radius: 4px;
+}
+.upperbar__ALPHALINK{
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0; 
+    padding-right: 33px;
+}
+
+.upperbar__ALPHALINK li{
+    padding: 8px 15px;
+}
+
+.upperbar__togglebtn{
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+}
+
+.content1{
+    padding-top: 68px; 
+    z-index: 1;
+}
+
+.content2{
+    padding-top: 20px; 
+}
+
+@media screen and (max-width: 768px) {
+    .upperbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+        padding-top: 11px;
+        padding-left: 20px;
+    }
+
+    .upperbar__LOGO{
+        font-size: 22px;
+        color: pink;
+        padding-top: 6px;
+        padding-left: 25px;
+    }
+
+    .upperbar__MENU{
+        display: none;
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+    }
+
+    .upperbar__MENU li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .upperbar__ALPHALINK {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .upperbar__togglebtn{
+        display: block;
+        font-size: 24px;
+        padding-top: 3px;
+        padding-right: 10px;
+    }
+
+    .upperbar__MENU.active,
+    .upperbar__ALPHALINK.active{
+        display: flex;
+    }
+
+    .content1{
+        padding-top: 59px; 
+        z-index: 1;
+    }
+    
+    .content2{
+        padding-top: 20px; 
+    }
+}
