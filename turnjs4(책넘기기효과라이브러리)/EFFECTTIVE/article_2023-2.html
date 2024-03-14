@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GLOSS 2022-1</title>
+
+    <!--trunjs4 복붙-->
+    <meta name="viewport" content="width = 1050, user-scalable = no" />
+    <script type="text/javascript" src="../extras/jquery.min.1.7.js"></script>
+    <script type="text/javascript" src="../extras/modernizr.2.5.3.min.js"></script>
+</head>
+<body>
+
+    <div class="flipbook-viewport">
+        <div class="container">
+            <div class="flipbook">
+                <div style="background-image:url(pages2023-2/1.png)"></div>
+                <div style="background-image:url(pages2023-2/2.png)"></div>
+                <div style="background-image:url(pages2023-2/3.png)"></div>
+                <div style="background-image:url(pages2023-2/4.png)"></div>
+                <div style="background-image:url(pages2023-2/5.png)"></div>
+                <div style="background-image:url(pages2023-2/6.png)"></div>
+                <div style="background-image:url(pages2023-2/7.png)"></div>
+                <div style="background-image:url(pages2023-2/8.png)"></div>
+                <div style="background-image:url(pages2023-2/9.png)"></div>
+                <div style="background-image:url(pages2023-2/10.png)"></div>
+                <div style="background-image:url(pages2023-2/11.png)"></div>
+                <div style="background-image:url(pages2023-2/12.png)"></div>
+                <div style="background-image:url(pages2023-2/13.png)"></div>
+                <div style="background-image:url(pages2023-2/14.png)"></div>
+                <div style="background-image:url(pages2023-2/15.png)"></div>
+                <div style="background-image:url(pages2023-2/16.png)"></div>
+                <div style="background-image:url(pages2023-2/17.png)"></div>
+                <div style="background-image:url(pages2023-2/18.png)"></div>
+                <div style="background-image:url(pages2023-2/19.png)"></div>
+                <div style="background-image:url(pages2023-2/20.png)"></div>
+                <div style="background-image:url(pages2023-2/21.png)"></div>
+                <div style="background-image:url(pages2023-2/22.png)"></div>
+                <div style="background-image:url(pages2023-2/23.png)"></div>
+                <div style="background-image:url(pages2023-2/24.png)"></div>
+                <div style="background-image:url(pages2023-2/25.png)"></div>
+                <div style="background-image:url(pages2023-2/26.png)"></div>
+                <div style="background-image:url(pages2023-2/27.png)"></div>
+                <div style="background-image:url(pages2023-2/28.png)"></div>
+                <div style="background-image:url(pages2023-2/29.png)"></div>
+                <div style="background-image:url(pages2023-2/30.png)"></div>
+                <div style="background-image:url(pages2023-2/31.png)"></div>
+                <div style="background-image:url(pages2023-2/32.png)"></div>
+                <div style="background-image:url(pages2023-2/33.png)"></div>
+                <div style="background-image:url(pages2023-2/34.png)"></div>
+                <div style="background-image:url(pages2023-2/35.png)"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        function loadApp() {
+
+            // Create the flipbook
+        
+            $('.flipbook').turn({
+                    // Width
+        
+                    width:922,
+                    
+                    // Height
+        
+                    height:600,
+        
+                    // Elevation
+        
+                    elevation: 50,
+                    
+                    // Enable gradients
+        
+                    gradients: true,
+                    
+                    // Auto center this flipbook
+        
+                    autoCenter: true
+        
+            });
+        }
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['../lib/turn.js'],
+	nope: ['../lib/turn.html4.min.js'],
+	both: ['css/basic.css'],
+	complete: loadApp
+});ß
+    
+
+    </script>
+</body>
+</html>
